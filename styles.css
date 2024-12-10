@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  padding: 10px 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid black;
+}
+
+header .logo {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 33px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+}
+
+.hero {
+  background: url("hero-image.jpg") no-repeat center center/cover;
+  background-color: #f4d9d0;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #003d80;
+}
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 20px;
+}
+
+.feature-icon img {
+  background-color: white;
+  height: 44px;
+}
+
+.help-feature-lists li {
+  text-align: left;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+.partner {
+  text-align: center;
+}
+
+.partner img {
+  max-width: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+}
