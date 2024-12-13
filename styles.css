@@ -37,6 +37,11 @@ header .logo {
   color: #333;
 }
 
+.nav {
+  --bs-nav-link-color: #333 !important;
+  --bs-nav-link-hover-color: #f4d9d0 !important;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -133,11 +138,11 @@ nav ul li a {
 }
 
 .form-group input {
-  width: 45%;
+  width: 70%;
 }
 
 .form-group textarea {
-  width: 45%;
+  width: 70%;
 }
 
 .partner {
