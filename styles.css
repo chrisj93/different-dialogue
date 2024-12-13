@@ -76,15 +76,15 @@ nav ul li a {
 .cta-button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #0056b3;
-  color: white;
+  background-color: #f4d9d0;
+  color: #333;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
 }
 
 .cta-button:hover {
-  background-color: #003d80;
+  background-color: white;
 }
 
 .section {
@@ -130,15 +130,6 @@ nav ul li a {
 #contact-form.active {
   display: block;
   opacity: 1;
-}
-
-.cta-button {
-  color: #333;
-  background-color: white;
-}
-
-.cta-button:hover {
-  background-color: #f4d9d0;
 }
 
 .form-group input {
