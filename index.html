@@ -14,16 +14,36 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header>
-      <div class="logo">Different Dialogue</div>
-      <nav>
-        <ul>
-          <li><a href="#about">about us</a></li>
-          <li><a href="#help">how can we help?</a></li>
-          <li><a href="#partners">partners & certifications</a></li>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <span class="fs-4">Different Dialogue</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="/" class="nav-link" aria-current="page">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">about us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#help" class="nav-link">how can we help?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#partners" class="nav-link">partners & certifications</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </header>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -174,6 +194,29 @@
       </div>
     </section>
 
+    <section id="contact" class="section">
+        <h2>We'd love to hear from you! Click the button below to reach out.</h2>
+        <button id="toggle-contact-form" class="cta-button">Contact Us</button>
+      <br><br>
+        <form id="contact-form" style="display: none;">
+          <div class="form-group mb-3">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+          </div>
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </section>
+      
+
     <!-- Partners & Certifications Section -->
     <section id="partners" class="section">
       <div id="anchor-spacer" style="height: 50px"></div>
@@ -206,7 +249,7 @@
           </div>
           <div class="feature col">
             <h3 class="fs-2 text-body-emphasis">
-              Vietnam - Different Dialogue /JAF
+              Vietnam - Different Dialogue / JAF
             </h3>
             <ul class="help-feature-lists">
               <li>Sportswear & Outerwear</li>
@@ -217,7 +260,7 @@
           </div>
           <div class="feature col">
             <h3 class="fs-2 text-body-emphasis">
-              China - Different Dialogue /TopTex
+              China - Different Dialogue / TopTex
             </h3>
             <ul class="help-feature-lists">
               <li>China Production - Small / Medium Volumes</li>
@@ -250,15 +293,20 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-left">
-        © 2024 Different Dialogue Sourcing. All rights reserved.
-      </div>
-      <div class="footer-center">
-        <a href="#about">About</a> | <a href="#help">Services</a> |
-        <a href="#partners">Partners</a>
-      </div>
-      <div class="footer-right">Follow us on: [Social Media Links]</div>
-    </footer>
+    <div class="container">
+      <footer class=>
+        <div class="footer-left">
+          © 2024 Different Dialogue Sourcing. All rights reserved.
+        </div>
+        <div class="d-flex footer-center">
+          <a href="#about">About</a> <a href="#help">Services</a>
+          <a href="#partners">Partners</a>
+        </div>
+        <div class="footer-right">Follow us on: [Social Media Links]</div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+
   </body>
 </html>

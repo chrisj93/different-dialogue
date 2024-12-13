@@ -7,6 +7,17 @@ body {
   color: #333;
 }
 
+div.container {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  position: sticky;
+}
+
+a.nav-link {
+  color: #333;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +34,7 @@ header {
 header .logo {
   font-weight: 400;
   font-style: normal;
-  font-size: 33px;
+  font-size: 3em;
   color: #333;
 }
 
@@ -60,6 +71,7 @@ nav ul li a {
   font-size: 2em;
   font-weight: 400;
   margin: 0;
+  color: white;
 }
 
 .cta-button {
@@ -110,6 +122,34 @@ nav ul li a {
   gap: 0px;
 }
 
+#contact-form {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#contact-form.active {
+  display: block;
+  opacity: 1;
+}
+
+.cta-button {
+  color: #333;
+  background-color: white;
+}
+
+.cta-button:hover {
+  background-color: #f4d9d0;
+}
+
+.form-group input {
+  width: 45%;
+}
+
+.form-group textarea {
+  width: 45%;
+}
+
 .partner {
   text-align: center;
 }
@@ -122,10 +162,16 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #f4d9d0;
   border-top: 1px solid #ddd;
   font-size: 14px;
 }
 
-@media (min-width: 992px) {
+.footer-center {
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+.footer-center a {
+  color: black;
 }
