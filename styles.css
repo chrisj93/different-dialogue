@@ -79,7 +79,7 @@ nav ul li a {
   background-color: #f4d9d0;
   color: #333;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: bold;
 }
 
@@ -158,10 +158,11 @@ footer {
 }
 
 .footer-center {
-  width: 30%;
-  justify-content: space-evenly;
+  gap: 5em;
 }
 
 .footer-center a {
   color: black;
+  margin-left: 3px;
+  margin-right: 3px;
 }
